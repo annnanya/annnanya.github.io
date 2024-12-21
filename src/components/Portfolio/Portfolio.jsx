@@ -3,6 +3,7 @@ import "./Portfolio.css";
 import { AiFillGithub } from "react-icons/ai";
 import { PiMonitor } from "react-icons/pi";
 import { motion, useInView, useAnimation } from "framer-motion";
+import Skills from "../Header/Skills";
 
 const data = [
 	{

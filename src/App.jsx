@@ -5,15 +5,17 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
+import Skills from "./components/Header/Skills";
 
 const App = () => {
 	return (
 		<>
 			<Toaster position="top-center" />
 			<Header />
+			{/* <Skills /> */}
 			<Nav />
 			<Portfolio />
-			<Contacts />
+			{/* <Contacts /> */}
 			<Footer />
 		</>
 	);
