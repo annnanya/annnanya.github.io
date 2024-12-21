@@ -4,6 +4,7 @@ import CTA from "./CTA";
 import HeroImage from "../../assets/HeroSection.jpeg";
 import Headersocial from "./Headersocial";
 import { motion } from "framer-motion";
+import Skills from "./Skills";
 const header = () => {
 	const initial = {
 		translateY: 30,

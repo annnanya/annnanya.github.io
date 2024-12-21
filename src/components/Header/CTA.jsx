@@ -23,7 +23,7 @@ const CTA = () => {
 			<a href={CV} download className="btn">
 				Download CV
 			</a>
-			<a href="#contact" className="btn btn-primary">
+			<a href="mailto:singh.ananya2406@gmail.com" className="btn btn-primary">
 				Get in touch
 			</a>
 		</motion.div>

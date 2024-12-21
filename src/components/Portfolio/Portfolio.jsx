@@ -3,7 +3,7 @@ import "./Portfolio.css";
 import { AiFillGithub } from "react-icons/ai";
 import { PiMonitor } from "react-icons/pi";
 import { motion, useInView, useAnimation } from "framer-motion";
-import Skills from "../Header/Skills";
+import TechImg from "../../assets/tech-stack.png";
 
 const data = [
 	{
@@ -58,59 +58,67 @@ const Portfolio = () => {
 
 	return (
 		<section id="portfolio" className="portfolio">
-			<h1>Portfolio</h1>
-			<h5>My Recent Works</h5>
-			<div ref={ref} className="portfolio__container">
-				{data.map(({ id, url, title, github, weburl, desc, date, techStack }) => {
-					return (
-						<motion.article
-							variants={{
-								hidden: { opacity: 0, translateY: 30 },
-								visible: { opacity: 1, translateY: 0 },
-							}}
-							key={id}
-							initial="hidden"
-							animate={mainControls}
-							transition={{
-								duration: 1,
-								delay: 0.2,
-							}}
-							className="portfolio__item">
-							<div className="portfolio__item-image">
-								<img src={url} alt={title}></img>
-							</div>
-							<div className="details">
-								<div className="projectDetails">
-									<h3>{title}</h3>
-									<p className="date">{date}</p>
-									<p className="techStack">{techStack}</p>
+			<>
+				<h1>Skills</h1>
+				<div className="skills-image">
+					<img src={TechImg} alt="Skills and Technologies"></img>
+				</div>
+			</>
+			<>
+				<h1>Portfolio</h1>
+				<h5>My Recent Works</h5>
+				<div ref={ref} className="portfolio__container">
+					{data.map(({ id, url, title, github, weburl, desc, date, techStack }) => {
+						return (
+							<motion.article
+								variants={{
+									hidden: { opacity: 0, translateY: 30 },
+									visible: { opacity: 1, translateY: 0 },
+								}}
+								key={id}
+								initial="hidden"
+								animate={mainControls}
+								transition={{
+									duration: 1,
+									delay: 0.2,
+								}}
+								className="portfolio__item">
+								<div className="portfolio__item-image">
+									<img src={url} alt={title}></img>
 								</div>
+								<div className="details">
+									<div className="projectDetails">
+										<h3>{title}</h3>
+										<p className="date">{date}</p>
+										<p className="techStack">{techStack}</p>
+									</div>
 
-								<p className="desc">{desc}</p>
-								<div className="button-flex">
-									<div className="portfolio__item-cta">
-										<a
-											href={github}
-											className="btn btn-primary ctaBtn"
-											target="_blank">
-											<AiFillGithub fontSize={24} />
-											Github
-										</a>
-									</div>
-									<div className="portfolio__item-cta">
-										<a
-											href={weburl}
-											className="btn btn-primary ctaBtn"
-											target="_blank">
-											<PiMonitor fontSize={24} />
-										</a>
+									<p className="desc">{desc}</p>
+									<div className="button-flex">
+										<div className="portfolio__item-cta">
+											<a
+												href={github}
+												className="btn btn-primary ctaBtn"
+												target="_blank">
+												<AiFillGithub fontSize={24} />
+												Github
+											</a>
+										</div>
+										<div className="portfolio__item-cta">
+											<a
+												href={weburl}
+												className="btn btn-primary ctaBtn"
+												target="_blank">
+												<PiMonitor fontSize={24} />
+											</a>
+										</div>
 									</div>
 								</div>
-							</div>
-						</motion.article>
-					);
-				})}
-			</div>
+							</motion.article>
+						);
+					})}
+				</div>
+			</>
 		</section>
 	);
 };

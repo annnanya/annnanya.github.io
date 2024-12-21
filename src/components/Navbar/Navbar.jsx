@@ -13,7 +13,7 @@ const Nav = () => {
 		<motion.nav
 			initial={{ width: "5%" }}
 			animate={{ width: "max-content" }}
-			transition={{ duration: 1, delay: 2.6 }}>
+			transition={{ duration: 0.6, delay: 0.6 }}>
 			<a
 				href="mailto:singh.ananya2406@gmail.com"
 				onClick={() => setActiveNav("#experience")}
@@ -30,12 +30,12 @@ const Nav = () => {
 				className={activeNav === "#portfolio" ? "active" : ""}>
 				<RiServiceLine />
 			</a>
-			<a
+			{/* <a
 				href="#contacts"
 				onClick={() => setActiveNav("#contacts")}
 				className={activeNav === "#contacts" ? "active" : ""}>
 				<BiMessageSquareDetail />
-			</a>
+			</a> */}
 		</motion.nav>
 	);
 };
