@@ -18,6 +18,16 @@ const data = [
 	},
 	{
 		id: 2,
+		weburl: "https://spotify-clone-alpha-ten.vercel.app",
+		title: "Spotify Clone",
+		date: "January 25 - Present",
+		techStack: "ReactJs, ContextAPI",
+		desc: `A React application using ContextAPI to build a Spotify clone manages global state efficiently, handling user authentication, playlists, and playback seamlessly. It leverages Spotify's API to fetch data and provide a dynamic and interactive music streaming experience.`,
+		url: "https://raw.githubusercontent.com/annnanya/annnanya/master/src/assets/spotify.png",
+		github: "https://github.com/annnanya/react-spotify-clone-main",
+	},
+	{
+		id: 3,
 		weburl: "https://bookstack-omega-peach.vercel.app",
 		title: "BookStack",
 		date: "August 24 - Present",
@@ -27,7 +37,7 @@ const data = [
 		github: "https://github.com/annnanya/stackstore",
 	},
 	{
-		id: 3,
+		id: 4,
 		weburl: "https://spacetourism-iota.vercel.app/SpaceTourism/",
 		title: "Space Tourism",
 		date: "September 24 - Present",
@@ -37,7 +47,7 @@ const data = [
 		github: "https://github.com/annnanya/spacetourism",
 	},
 	{
-		id: 4,
+		id: 5,
 		weburl: "https://envshare-puce-one.vercel.app",
 		title: "EnvShare",
 		date: "November 24 - Present",
