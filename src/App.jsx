@@ -6,14 +6,16 @@ import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 import Skills from "./components/Header/Skills";
+import Experience from "./components/Experience/Experience";
 
 const App = () => {
 	return (
 		<>
 			<Toaster position="top-center" />
 			<Header />
-			{/* <Skills /> */}
+			<Skills />
 			<Nav />
+			<Experience />
 			<Portfolio />
 			{/* <Contacts /> */}
 			<Footer />
