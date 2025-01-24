@@ -62,14 +62,15 @@
 
 .experience__company {
     font-size: 1.2rem;
-    font-style: italic;
+    font-style: bold;
     color: var(--color-accent);
 }
 
 .experience__duration {
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: #666;
+    font-style: italic;
+    color: #a19494;
 }
 
 .experience__responsibilities {

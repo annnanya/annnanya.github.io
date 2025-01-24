@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Skills.css";
 
 const skills = [
@@ -33,13 +34,24 @@ const Skills = () => {
         <section id="skills" className="skills-section">
             <h1>Skills</h1>
             <div className="skills-container">
-                <ul className="skills-list">
+                <motion.ul
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    className="skills-list"
+                >
                     {skills.map((skill, index) => (
-                        <li key={index} className="skill-item">
+                        <motion.li
+                            key={index}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            className="skill-item"
+                        >
                             {skill}
-                        </li>
+                        </motion.li>
                     ))}
-                </ul>
+                </motion.ul>
             </div>
         </section>
     );

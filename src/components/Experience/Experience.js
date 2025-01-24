@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Experience.css";
 
 const experiences = [
@@ -32,22 +33,39 @@ const Experience = () => {
             <h1>Experience</h1>
             <div className="experience__container">
                 {experiences.map(({ id, role, company, duration, responsibilities }) => (
-                    <div key={id} className="experience__item">
+                    <motion.div
+                        key={id}
+                        initial={{ opacity: 0, translateY: 30 }}
+                        animate={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                        className="experience__item"
+                    >
                         <div className="desc">
                             <h3 className="experience__role">{role}</h3>
                             <p className="experience__company">{company}</p>
                             <p className="experience__duration">{duration}</p>
                         </div>
-                        <ul className="experience__responsibilities">
+                        <motion.ul
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.4 }}
+                            className="experience__responsibilities"
+                        >
                             {responsibilities.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <motion.li
+                                    key={index}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                                >
+                                    {item}
+                                </motion.li>
                             ))}
-                        </ul>
-                    </div>
+                        </motion.ul>
+                    </motion.div>
                 ))}
             </div>
         </section>
-
     );
 };
 
