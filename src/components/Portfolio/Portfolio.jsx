@@ -23,7 +23,7 @@ const data = [
 		date: "January 25 - Present",
 		techStack: "ReactJs, ContextAPI",
 		desc: `A React application using ContextAPI to build a Spotify clone manages global state efficiently, handling user authentication, playlists, and playback seamlessly. It leverages Spotify's API to fetch data and provide a dynamic and interactive music streaming experience.`,
-		url: "https://raw.githubusercontent.com/annnanya/annnanya/master/src/assets/spotify.png", // Update this if needed
+		url: "https://raw.githubusercontent.com/annnanya/annnanya/master/src/assets/tech-stack copy.png",
 		github: "https://github.com/annnanya/react-spotify-clone-main",
 	},
 	{
