@@ -5,17 +5,28 @@ import "./Experience.css";
 const experiences = [
     {
         id: 1,
+        role: "Full Stack Developer",
+        company: "Micoworks",
+        duration: "March 2025 - Present",
+        responsibilities: [
+            " - Engineered a reusable React.js and Next.js frontend framework with Redux, enhancing load times and improving state management for a smoother user experience.",
+            " - Developed a scalable backend system with Node.js, Azure Serverless Functions, and Cosmos DB, reducing response times and improving performance over the legacy .NET system.",
+            " - Automated document generation with Azure Queue-Triggered Functions and REST API integration, ensuring robust code quality with 90% test coverage through Jest unit testing.",
+        ]
+    },
+    {
+        id: 2,
         role: "Developer",
         company: "Cogitate Technology Solutions",
-        duration: "May 2024 - Present",
+        duration: "May 2024 - February 2025",
         responsibilities: [
             " - Automated critical processes using Azure Functions, reducing manual intervention by 60% and improving system efficiency.",
             " - Migrated 200,000+ records from a legacy system to a modern Node.js stack, improving data retrieval speed by 30% with optimized SQL queries and Cosmos DB integration.",
             " - Crafted robust RESTful and GraphQL APIs through Node.js architecture, enabling efficient data processing and reducing latency by 25%.",
-        ],
+        ]
     },
     {
-        id: 2,
+        id: 3,
         role: "Associate Developer",
         company: "Cogitate Technology Solutions",
         duration: "May 2022 - May 2024",
@@ -23,8 +34,8 @@ const experiences = [
             " - Engineered a reusable React.js and Next.js frontend framework with Redux, enhancing load times and improving state management for a smoother user experience.",
             " - Developed a scalable backend system with Node.js, Azure Serverless Functions, and Cosmos DB, reducing response times and improving performance over the legacy .NET system.",
             " - Automated document generation with Azure Queue-Triggered Functions and REST API integration, ensuring robust code quality with 90% test coverage through Jest unit testing.",
-        ],
-    },
+        ]
+    }
 ];
 
 const Experience = () => {
