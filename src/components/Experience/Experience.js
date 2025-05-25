@@ -9,9 +9,8 @@ const experiences = [
         company: "Micoworks",
         duration: "March 2025 - Present",
         responsibilities: [
-            " - Engineered a reusable React.js and Next.js frontend framework with Redux, enhancing load times and improving state management for a smoother user experience.",
-            " - Developed a scalable backend system with Node.js, Azure Serverless Functions, and Cosmos DB, reducing response times and improving performance over the legacy .NET system.",
-            " - Automated document generation with Azure Queue-Triggered Functions and REST API integration, ensuring robust code quality with 90% test coverage through Jest unit testing.",
+            " - Identified and proposed frontend performance optimizations through in-depth analysis of New Relic reports, leading to a 20% improvement in load times.",
+            " - Collaborated on new feature development in a fast-paced, Agile team environment, contributing to rapid iteration and delivery."
         ]
     },
     {
